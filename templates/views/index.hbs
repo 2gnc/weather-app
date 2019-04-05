@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather app: {{title}}</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
-    <script src="/js/scripts.js"></script>
-</head>
+    {{>head}}
 <body>
     {{>header}}
     <main class="content">
@@ -16,8 +9,8 @@
             <input type="text" placeholder="Type your location here" class="form__input">
             <button class="form__button">submit</button>
         </form>
-        <p class="forecast"></p>
-        <p class="forecast"></p>
+        <p class="paragraph"></p>
+        <p class="paragraph"></p>
     </main>
     {{>footer}}
 </body>

@@ -103,3 +103,7 @@ body {
     background: #888;
     color: #fff;
 }
+
+.paragraph {
+    padding: .5em 0;
+}
