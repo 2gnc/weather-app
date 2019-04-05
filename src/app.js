@@ -7,6 +7,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const app = express();
+const port = process.env.PORT || 3000;
 const publicDir = path.join(__dirname, '../public');
 const customTemplatesPath = path.join(__dirname, '../templates/views');
 const templatesPartsPath = path.join(__dirname, '../templates/partials');
@@ -90,6 +91,6 @@ app.get('*', (req, res) => {
     })
 });
 
-app.listen(3333, () => {
-    console.log('listening 3333');
+app.listen(port, () => {
+    console.log(`listening ${port}`);
 }); 
