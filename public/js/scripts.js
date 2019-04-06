@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) { 
     const form = document.querySelector('form');
     const input = form.querySelector('input');
-    const [ forecastOne, forecastTwo ] = document.querySelectorAll('.forecast');
+    const [ forecastOne, forecastTwo ] = document.querySelectorAll('.paragraph');
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
